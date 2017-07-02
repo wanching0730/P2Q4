@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:text="@string/MidPoint"
+        style = "@style/RowStyle"/>
+
+    <EditText
+        android:id="@+id/x_midpoint"
+        style = "@style/InputStyle"
+        android:hint="@string/x_coordinate"/>
+    <EditText
+        android:id="@+id/y_midpoint"
+        style = "@style/InputStyle"
+        android:hint="@string/y_cordinate"/>
+
+
+
+
+</LinearLayout>

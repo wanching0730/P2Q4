@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">P2Q4</string>
+    <string name="Point_1">Point 1</string>
+    <string name="Point_2">Point 2</string>
+    <string name="MidPoint">Midpoint</string>
+    <string name="x_coordinate">x</string>
+    <string name="y_cordinate">y</string>
+</resources>
