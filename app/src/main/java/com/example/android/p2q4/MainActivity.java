@@ -3,7 +3,7 @@ package com.example.android.p2q4;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 public class MainActivity extends FragmentActivity implements FragmentOne.OnMidpointCalculateListener {
 
@@ -19,6 +19,14 @@ public class MainActivity extends FragmentActivity implements FragmentOne.OnMidp
 
         android.widget.Toolbar toolbar = (android.widget.Toolbar) findViewById(R.id.tool_bar);
         setActionBar(toolbar);
+
+        toolbar.setNavigationIcon(R.drawable.icon);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
 
         if(findViewById(R.id.fragment_container) != null){
